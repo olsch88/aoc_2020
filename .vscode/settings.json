@@ -1,0 +1,6 @@
+{
+    "python.linting.pycodestyleEnabled": false,
+    "editor.formatOnSave": true,
+    "python.formatting.provider": "black",
+    "python.analysis.typeCheckingMode": "basic",
+}

@@ -13,7 +13,7 @@ def solve_part1(data: list[str]) -> int:
     return valid_count
 
 
-def solve_part2(data: list[int]) -> int:
+def solve_part2(data: list[str]) -> int:
     valid_count: int = 0
     code: str
     for line in data:
@@ -32,7 +32,7 @@ def get_data(filename: str) -> list[str]:
     return data
 
 
-def get_parts(line: str) -> list:
+def get_parts(line: str) -> tuple:
     parts = line.split()
     numbers = (int(parts[0].split("-")[0]), int(parts[0].split("-")[1]))
     letter = parts[1][:-1]
