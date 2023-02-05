@@ -1,4 +1,4 @@
-from itertools import permutations
+import time
 
 
 def solve_part1(data: list[str]) -> int:
@@ -44,11 +44,15 @@ def get_parts(line: str) -> tuple:
 def main():
     data = get_data("d2_input.txt")
 
-    print("Solution Day 2, Part1:")
-    print(solve_part1(data))
+    start = time.perf_counter()
+    print("Solution Day 2, Part1:", end="\t")
+    print(solve_part1(data), end="\t")
+    print(f"Runtime: {time.perf_counter()-start:.3f} ")
 
-    print("Solution Day 2, Part2:")
-    print(solve_part2(data))
+    start = time.perf_counter()
+    print("Solution Day 2, Part2:", end="\t")
+    print(solve_part2(data), end="\t")
+    print(f"Runtime: {time.perf_counter()-start:.3f} ")
 
 
 if __name__ == "__main__":
