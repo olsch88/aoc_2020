@@ -98,13 +98,13 @@ def main():
     data = get_data("d4_input.txt")
 
     start = time.perf_counter()
-    print("Solution Day 3, Part1:", end="\t")
+    print("Solution Day 4, Part1:", end="\t")
     print(solve_part1(data), end="\t")
     print(f"Runtime: {time.perf_counter()-start:.3f} ")
 
     start = time.perf_counter()
-    print("Solution Day 3, Part2:", end="\t")
-    print(solve_part2(data), end="\t\t")
+    print("Solution Day 4, Part2:", end="\t")
+    print(solve_part2(data), end="\t")
     print(f"Runtime: {time.perf_counter()-start:.3f} ")
 
 
