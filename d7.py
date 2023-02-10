@@ -137,7 +137,7 @@ def main():
 
     start = time.perf_counter()
     print("Solution Day 7, Part2:", end="\t")
-    print(solve_part2(data), end="\t\t")
+    print(solve_part2(data), end="\t")
     print(f"Runtime: {time.perf_counter()-start:.3f} ")
 
 
