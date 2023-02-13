@@ -14,7 +14,17 @@ def solve_part1(data: list[int]) -> int:
 
 
 def solve_part2(data: list[int]) -> int:
-    return 0
+    possibilities = {0: 1}
+    data.append(max(data) + 3)
+    for i in data:
+
+        possibilities[i] = (
+            possibilities.get(i - 1, 0)
+            + possibilities.get(i - 2, 0)
+            + possibilities.get(i - 3, 0)
+        )
+        # print(possibilities[i])
+    return possibilities[max(data)]
 
 
 def get_data(filename: str):
